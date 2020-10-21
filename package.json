@@ -9,9 +9,9 @@
     "postcss:build-dev": "postcss src/styles/tailwind.pcss -o src/tailwind.out.css --env development",
     "postcss:watch": "postcss src/styles/tailwind.pcss -o src/tailwind.out.css --env development -w",
     "postcss:build-prod": "postcss src/styles/tailwind.pcss -o src/tailwind.out.css --env production",
-    "parcel:serve": "parcel src/index.html",
-    "parcel:watch": "parcel watch src/index.html",
-    "parcel:build": "parcel build src/index.html",
+    "parcel:serve": "parcel src/*.html",
+    "parcel:watch": "parcel watch src/*.html",
+    "parcel:build": "parcel build src/*.html",
     "clean": "rm -rf dist .cache src/tailwind.out.css",
     "build": "npm-run-all -s clean postcss:build-prod parcel:build",
     "start": "npm-run-all -s clean postcss:build-dev -p postcss:watch parcel:serve"

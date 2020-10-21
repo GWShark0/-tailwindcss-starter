@@ -1,82 +1,84 @@
-.btn {
-  @apply text-black font-semibold leading-6 border-2 border-solid border-transparent rounded-full transition-colors duration-150;
-  padding: calc(0.5rem - 2px) calc(2rem - 2px);
+@layer components {
+  .btn {
+    @apply text-black font-semibold leading-6 border-2 border-solid border-transparent rounded-full transition-colors duration-150;
+    padding: calc(0.5rem - 2px) calc(2rem - 2px);
 
-  &:focus {
-    @apply outline-none;
-  }
-
-  /* Variants */
-  &-primary {
-    @apply bg-yellow-300;
-
-    &:hover,
     &:focus {
-      @apply bg-yellow-400;
+      @apply outline-none;
     }
-  }
 
-  &-secondary {
-    @apply bg-black text-white;
+    /* Variants */
+    &-primary {
+      @apply bg-yellow-300;
 
-    &:hover,
-    &:focus {
-      @apply bg-gray-900;
+      &:hover,
+      &:focus {
+        @apply bg-yellow-400;
+      }
     }
-  }
 
-  &-light {
-    @apply bg-white text-black;
+    &-secondary {
+      @apply bg-black text-white;
 
-    &:hover,
-    &:focus {
-      @apply bg-gray-200;
+      &:hover,
+      &:focus {
+        @apply bg-gray-900;
+      }
     }
-  }
 
-  &-outline-primary {
-    @apply text-yellow-300 border-yellow-300;
+    &-light {
+      @apply bg-white text-black;
 
-    &:hover,
-    &:focus {
-      @apply text-black bg-yellow-300;
+      &:hover,
+      &:focus {
+        @apply bg-gray-200;
+      }
     }
-  }
 
-  &-outline-secondary {
-    @apply text-black border-black;
+    &-outline-primary {
+      @apply text-yellow-300 border-yellow-300;
 
-    &:hover,
-    &:focus {
-      @apply text-white bg-black;
+      &:hover,
+      &:focus {
+        @apply text-black bg-yellow-300;
+      }
     }
-  }
 
-  &-outline-light {
-    @apply text-white border-white;
+    &-outline-secondary {
+      @apply text-black border-black;
 
-    &:hover,
-    &:focus {
-      @apply text-black bg-white;
+      &:hover,
+      &:focus {
+        @apply text-white bg-black;
+      }
     }
-  }
 
-  /* Sizes */
-  &-sm {
-    @apply text-sm leading-4;
-  }
+    &-outline-light {
+      @apply text-white border-white;
 
-  &-lg {
-    padding: calc(0.75rem - 2px) calc(4rem - 2px);
-  }
+      &:hover,
+      &:focus {
+        @apply text-black bg-white;
+      }
+    }
 
-  /* Squared */
-  &-squared {
-    @apply rounded;
-  }
+    /* Sizes */
+    &-sm {
+      @apply text-sm leading-4;
+    }
 
-  /* Display */
-  &-block {
-    @apply block w-full;
+    &-lg {
+      padding: calc(0.75rem - 2px) calc(4rem - 2px);
+    }
+
+    /* Squared */
+    &-squared {
+      @apply rounded;
+    }
+
+    /* Display */
+    &-block {
+      @apply block w-full;
+    }
   }
 }
