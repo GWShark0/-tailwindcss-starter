@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Forms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../tailwind.out.css">
+  <link rel="stylesheet" href="https://use.typekit.net/nuo0mcp.css">
+</head>
+
+<body>
+  <div class="p-4 space-y-4">
+    <h1 class="text-4xl">Forms</h1>
+    <div>
+      <label class="inline-block mb-1 text-sm font-semibold" for="name">
+        Name
+      </label>
+      <input class="form-control" type="text" id="name" placeholder="Name" />
+    </div>
+    <div>
+      <label class="inline-block mb-1 text-sm font-semibold" for="name-disabled">
+        Name
+      </label>
+      <input class="form-control" type="text" id="name-disabled" placeholder="Name" disabled />
+    </div>
+    <div>
+      <label class="inline-block mb-1 text-sm font-semibold" for="name-invalid">
+        Name
+      </label>
+      <input class="form-control is-invalid" type="text" id="name-invalid" placeholder="Name" value="Lorem Ipsum" />
+      <small class="text-red-300 font-semibold text-xs">Error text lorem ipsum</small>
+    </div>
+    <div>
+      <label class="inline-block mb-1 text-sm font-semibold" for="name-required">
+        Name <span class="text-red-200">*</span>
+      </label>
+      <input class="form-control" type="text" id="name-required" placeholder="Name" />
+    </div>
+    <div>
+      <label class="inline-block mb-1 text-sm font-semibold" for="password">
+        Password
+      </label>
+      <input class="form-control" type="password" id="password" placeholder="At least 6 characters" />
+    </div>
+  </div>
+</body>
+
+</html>

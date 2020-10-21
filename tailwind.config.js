@@ -70,6 +70,10 @@ module.exports = {
       fontFamily: {
         sans: ['Proxima Nova', ...defaultTheme.fontFamily.sans],
       },
+      boxShadow: {
+        outline: '0 0 0 0.2rem rgba(15, 135, 255, 0.25)',
+        'outline-red': '0 0 0 0.2rem rgba(227, 45, 25, 0.25)',
+      },
     },
   },
   variants: {},
