@@ -7,6 +7,10 @@ module.exports = {
   purge: [],
   theme: {
     colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: '#000000',
+      white: '#ffffff',
       gray: {
         100: '#f5f5f5',
         200: '#efefef',
@@ -61,11 +65,22 @@ module.exports = {
         700: '#cc006e',
       },
     },
+    fontSize: {
+      xs: ['0.75rem', { lineHeight: '1rem' }],
+      sm: ['0.875rem', { lineHeight: '1rem' }],
+      base: ['1rem', { lineHeight: '1.75rem' }],
+      lg: ['1.125rem', { lineHeight: '2rem' }],
+      xl: ['1.25rem', { lineHeight: '2rem' }],
+      '2xl': ['1.5rem', { lineHeight: '2rem' }],
+      '3xl': ['2rem', { lineHeight: '2.25rem' }],
+      '4xl': ['2.5rem', { lineHeight: '3rem' }],
+      '5xl': ['4.5rem', { lineHeight: '5rem' }],
+    },
     extend: {
       fill: (theme) => ({
         red: theme('colors.red.500'),
         orange: theme('colors.orange.500'),
-        yelllow: theme('colors.yellow.500'),
+        yellow: theme('colors.yellow.500'),
         green: theme('colors.green.500'),
         blue: theme('colors.blue.500'),
         pink: theme('colors.pink.500'),
